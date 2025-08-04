@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,7 @@
     <!-- Noto Sans KR 및 Nanum Pen Script 폰트 추가 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Nanum+Pen+Script&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
@@ -23,21 +20,19 @@
         .font-nanum-pen {
             font-family: 'Nanum Pen Script', cursive;
         }
-
+        
         /* 스크롤 애니메이션 스타일 */
         .fade-in-up {
             opacity: 0;
             transform: translateY(40px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
         .fade-in-up.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
     </style>
 </head>
-
 <body class="bg-white">
 
     <!-- 상단 영상 섹션 (비율 수정) -->
@@ -51,7 +46,7 @@
         <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
         <!-- '인사말' 텍스트 (위치 및 스타일 수정) -->
         <div class="relative z-20 w-full mx-auto px-6 sm:px-12 md:px-24">
-            <h1 class="text-white text-4xl md:text-6xl font-bold">
+             <h1 class="text-white text-4xl md:text-6xl font-bold">
                 인사말
             </h1>
         </div>
@@ -59,7 +54,7 @@
 
     <!-- 콘텐츠 스크롤 레이어 -->
     <div class="relative z-10 bg-white">
-        <!-- 실제 콘텐츠 (mx-auto 제거하여 좌측 정렬) -->
+        <!-- 실제 콘텐츠 -->
         <div class="px-6 sm:px-12 md:px-24 py-16 lg:py-24">
             <!-- 페이지 제목 -->
             <header class="text-center mb-16 md:mb-24">
@@ -70,64 +65,61 @@
 
             <!-- 본문 내용 -->
             <main>
-                <!-- prose의 max-width를 유지하기 위해 내부 div 추가 -->
                 <div class="prose lg:prose-xl max-w-none">
                     <article class="text-gray-700">
-
-                        <figure class="sm:float-right sm:w-2/5 sm:ml-12 sm:mb-6 clear-both fade-in-up">
-                            <img class="w-full h-auto block rounded-lg shadow-md" src="https://i.imgur.com/lyvZzuj.jpeg"
-                                alt="청명기연환경의 최첨단 시험분석실">
-                        </figure>
-
-                        <div class="fade-in-up">
-                            <p class="text-xl md:text-2xl font-semibold text-gray-800">안녕하십니까, 청명기연환경 대표이사입니다.</p>
-                            <p class="mt-4">지난 35년간, 청명기연환경은 보이지 않는 환경의 언어를 가장 정확한 데이터로 번역하며 대한민국 환경 산업의 기준을 만들어왔습니다.
-                            </p>
+                        
+                        <!-- 첫번째 섹션: 그리드 레이아웃 -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start fade-in-up">
+                            <div>
+                                <p class="text-xl md:text-2xl font-semibold text-gray-800">안녕하십니까, 청명기연환경 대표이사입니다.</p>
+                                <p class="mt-4">지난 35년간, 청명기연환경은 보이지 않는 환경의 언어를 가장 정확한 데이터로 번역하며 대한민국 환경 산업의 기준을 만들어왔습니다.</p>
+                            </div>
+                            <figure>
+                                <img class="w-full h-auto block rounded-lg shadow-md" src="https://i.imgur.com/lyvZzuj.jpeg" alt="청명기연환경의 최첨단 시험분석실">
+                            </figure>
                         </div>
-
+                        
                         <hr class="my-12 md:my-16 fade-in-up">
 
                         <div class="fade-in-up">
                             <h2 class="font-bold text-gray-800">우리의 기반: 35년의 신뢰와 책임</h2>
-                            <p>우리의 자신감은 지난 30여 년간 흔들림 없이 지켜온 <strong class="text-gray-900">'신뢰'</strong>와 <strong
-                                    class="text-gray-900">'책임'</strong>이라는 단단한 기반 위에 서 있습니다. 5대 환경 분야를 아우르는 국가공인 면허,
-                                환경측정대행업 용역능력이행평가 우수기관 선정, 국제숙련도 최우수 기관 선정, 그리고 3만 건 이상의 성공적인 프로젝트 경험은 우리의 전문성을 객관적으로
-                                증명합니다.</p>
+                            <p>우리의 자신감은 지난 30여 년간 흔들림 없이 지켜온 <strong class="text-gray-900">'신뢰'</strong>와 <strong class="text-gray-900">'책임'</strong>이라는 단단한 기반 위에 서 있습니다. 5대 환경 분야를 아우르는 국가공인 면허, 환경측정대행업 용역능력이행평가 우수기관 선정, 국제숙련도 최우수 기관 선정, 그리고 3만 건 이상의 성공적인 프로젝트 경험은 우리의 전문성을 객관적으로 증명합니다.</p>
                         </div>
 
                         <div class="mt-12 fade-in-up">
                             <h2 class="font-bold text-gray-800">우리의 현재와 미래: 혁신과 성장</h2>
-                            <p>하지만 우리는 과거의 성공에 안주하지 않습니다. 청명기연환경은 이제 대한민국 최고의 환경 데이터 전문 기업을 넘어, 축적된 데이터와 기술력을 바탕으로 고객의
-                                성공을 이끄는 <strong class="text-gray-900">'데이터 기반 통합 솔루션 기업'</strong>으로의 위대한 도약을 시작합니다. 복잡한
-                                규제 준수를 한번에 해결하는 'CM 원솔루션', 연구자의 위대한 아이디어를 현실로 만드는 '연구지원솔루션(RSS)', 그리고 가장 정밀한 데이터로 의사결정의
-                                확신을 더하는 <strong class="text-gray-900">'시험분석 서비스'</strong>는 바로 그 혁신적인 변화의 증거입니다.</p>
+                            <p>하지만 우리는 과거의 성공에 안주하지 않습니다. 청명기연환경은 이제 대한민국 최고의 환경 데이터 전문 기업을 넘어, 축적된 데이터와 기술력을 바탕으로 고객의 성공을 이끄는 <strong class="text-gray-900">'데이터 기반 통합 솔루션 기업'</strong>으로의 위대한 도약을 시작합니다. 복잡한 규제 준수를 한번에 해결하는 'CM 원솔루션', 연구자의 위대한 아이디어를 현실로 만드는 '연구지원솔루션(RSS)', 그리고 가장 정밀한 데이터로 의사결정의 확신을 더하는 <strong class="text-gray-900">'시험분석 서비스'</strong>는 바로 그 혁신적인 변화의 증거입니다.</p>
                         </div>
-
+                        
                         <div class="mt-12 fade-in-up">
                             <h2 class="font-bold text-gray-800">우리의 동력: 사람과 문화</h2>
-                            <p>이 모든 위대한 여정은 결국 <strong class="text-gray-900">'사람'</strong>이 만들어갑니다. 우리는 <strong
-                                    class="text-gray-900">'책임', '신뢰', '혁신', '성장'</strong>의 가치를 지닌 최고의 동료들과 함께, 개인의 성장이 곧
-                                회사의 성장이라는 믿음 아래 아낌없이 지원하고 있습니다.</p>
-                        </div>
-
-                        <hr class="my-12 md:my-16 fade-in-up">
-
-                        <div class="text-center fade-in-up">
-                            <p>청명기연환경은 앞으로도 데이터로 고객에게 확신을, 솔루션으로 고객에게 성공을 드리는<br>가장 든든한 파트너가 될 것을 약속드립니다.</p>
-                            <p>우리가 만들어갈 더 나은 환경의 기준, 그 위대한 여정에 함께해 주시길 바랍니다.</p>
-                            <p>감사합니다.</p>
+                            <p>이 모든 위대한 여정은 결국 <strong class="text-gray-900">'사람'</strong>이 만들어갑니다. 우리는 <strong class="text-gray-900">'책임', '신뢰', '혁신', '성장'</strong>의 가치를 지닌 최고의 동료들과 함께, 개인의 성장이 곧 회사의 성장이라는 믿음 아래 아낌없이 지원하고 있습니다.</p>
                         </div>
                     </article>
                 </div>
             </main>
 
-            <!-- 서명 -->
-            <footer class="mt-20 text-right fade-in-up">
-                <p class="text-xl font-medium text-gray-800">(주)청명기연환경 대표이사</p>
-            </footer>
+            <!-- 하단 마무리 및 서명 -->
+            <div class="prose lg:prose-xl max-w-none mt-12">
+                 <hr class="my-12 md:my-16 fade-in-up">
+                
+                <div class="text-center fade-in-up">
+                    <h2 class="font-bold text-gray-800 !text-3xl">청명기연환경은 앞으로도</h2>
+                    <p class="!text-2xl !leading-relaxed mt-8">
+                        <span class="font-bold text-blue-700">데이터로 고객에게 확신</span>을, <span class="font-bold text-blue-700">솔루션으로 고객에게 성공</span>을 드리는<br>
+                        가장 든든한 파트너가 될 것을 약속드립니다.
+                    </p>
+                    <p class="!text-xl mt-6">우리가 만들어갈 더 나은 환경의 기준, 그 위대한 여정에 함께해 주시길 바랍니다.</p>
+                    <p class="!text-xl mt-4">감사합니다.</p>
+                </div>
+                
+                <footer class="mt-20 text-left fade-in-up">
+                    <p class="text-2xl font-medium text-gray-800">(주)청명기연환경 대표이사</p>
+                </footer>
+            </div>
         </div>
     </div>
-
+    
     <script>
         // 스크롤 애니메이션을 위한 Intersection Observer 설정
         const animatedElements = document.querySelectorAll('.fade-in-up');
@@ -149,5 +141,4 @@
     </script>
 
 </body>
-
 </html>
